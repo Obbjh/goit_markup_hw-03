@@ -32,7 +32,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     background-color: var(--primary-white-color);
-    border: 1px solid var(--border-box-secondary);
+    border-bottom: 1px solid var(--border-box-secondary);
 }
 
 .container {
@@ -52,26 +52,19 @@ body {
 .container-contacts {
     margin-left: auto;
     margin-right: auto;
-
 }
 
-.container-main {
+.flex-container {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
 }
 
-.conteiner-main-nav { 
+
+.container-main-nav { 
     display: flex;
     align-items: center;
 }
 
 .logo {
-    display: inline-block;
     margin-right: 93px;
 
     font-family: 'Raleway',sans-serif;
@@ -178,9 +171,15 @@ ul {
     text-align: center;
     background-color: var(--background-color);
 }
+
 .hero-title {
     margin-top: 0;
-    margin-bottom: 30;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 696px;
+   
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -192,13 +191,10 @@ ul {
 /* button */
 
 button {
-    display: inline-block;
     border-radius: 4px;
     padding: 10px 24px;
     min-width: 200px;
     text-align: center;
-
-
 
     font-size: 16px;
     line-height: 1.88;
@@ -239,6 +235,11 @@ button {
 
 .features-item {
     margin-right: 30px;
+    width: 270px;
+}
+
+.features-item:last-child {
+    margin-right: 0px;
 }
 
 .title {
@@ -290,7 +291,7 @@ button {
 .section-team {
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 0;
+    padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--background-color-user)
 }
@@ -316,8 +317,17 @@ button {
     padding-bottom: 94px;
 }
 
+img {
+    display: block;
+}
+
+.user-block{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .user {
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -328,7 +338,7 @@ button {
 }
 
 .user-profession {
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 400;
@@ -344,9 +354,10 @@ button {
 footer {
     font-style: normal;
     background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .address {
-    padding-bottom: 60px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -359,7 +370,6 @@ footer {
 
 .footer-logo {
     display: inline-block;
-    padding-top: 60px;
     margin-bottom : 28px;
     font-family: 'Raleway',sans-serif;
     font-style: normal;
@@ -417,8 +427,9 @@ footer {
 }
 
 .filter-list {
-    padding-left: 0;
     display: flex;
+    padding-left: 0;
+    margin-bottom: 50px;
     justify-content: center
 }
 
@@ -435,7 +446,6 @@ footer {
     margin-bottom: 30px;
     width: 370px;
     background-color: var(--primary-white-color);
-    border : 1px solid var()
 }
 
 .flex-element:nth-child(3n) {
@@ -447,10 +457,8 @@ footer {
 }
 
 .filter-button {
-    display: inline-block;
     border-radius: 4px;
     padding: 6px 22px;
-    margin-bottom: 50px;
     text-align: center;
     min-width: 67px;
 
@@ -469,9 +477,19 @@ footer {
     background-color: var(--accent-color);
 }
 
-.example-title {
+.info-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 24px;
-    margin-top: 20px;
+    padding-right: 24px;
+
+    border-left: 1px solid var(--border-box-primary);
+    border-right: 1px solid var(--border-box-primary);
+    border-bottom: 1px solid var(--border-box-primary);
+}
+
+.example-title {
+    margin-top: 0;
     margin-bottom: 4px;
     font-style: normal;
     font-weight: 700;
@@ -482,10 +500,8 @@ footer {
 }
 
 .example-object {
-    padding-left: 24px;
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 20px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
